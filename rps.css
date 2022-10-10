@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(222, 222, 222);
+}
+
+#title {
+  text-align: center;
+}
+
+#btnbar {
+  text-align: center;
+  place-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-container {
+  
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  
+}
+
+.player-choice {
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.player-choice:hover {
+  box-shadow: 2px 1px 1px;
+}
+
+#rock {
+  background: url("images/unhappy-rock.png") no-repeat center;
+  background-size: cover;
+  
+}
+
+#rock:hover {
+  background: url("images/happy-rock.png") no-repeat center;
+  background-size: cover;
+  
+}
+
+#rock-btn {
+ background-color: rgb(175, 161, 161);
+}
+
+#paper {
+  background: url("images/toilet-paper.png") no-repeat center;
+  background-size: cover;
+}
+
+#paper:hover {
+  background: url("images/paper-sword.png") no-repeat center;
+  background-size: cover;
+}
+
+#paper-btn {
+  background-color: rgb(233, 233, 233);
+}
+
+#scissors{
+  background: url("images/scissors.png") no-repeat center;
+  background-size: cover;
+}
+
+#scissors:hover{
+  background: url("images/using-scissors.png") no-repeat center;
+  background-size: cover;
+}
+
+#scissors-btn{
+  background-color: rgb(101, 183, 255);
+}
