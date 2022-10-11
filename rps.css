@@ -15,32 +15,28 @@ body {
 }
 
 .btn-container {
-  
   height: 200px;
   width: 200px;
   border-radius: 30px;
-  
 }
 
-.player-choice {
+.player-choice-btn {
   font-size: 25px;
   border-radius: 10px;
 }
 
-.player-choice:hover {
+.player-choice-btn:hover {
   box-shadow: 2px 1px 1px;
 }
 
 #rock {
   background: url("images/unhappy-rock.png") no-repeat center;
   background-size: cover;
-  
 }
 
 #rock:hover {
   background: url("images/happy-rock.png") no-repeat center;
   background-size: cover;
-  
 }
 
 #rock-btn {
@@ -73,4 +69,57 @@ body {
 
 #scissors-btn{
   background-color: rgb(101, 183, 255);
+}
+
+.player-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.player-container{
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border: grey solid 5px;
+  padding: 10px;
+  margin: 100px;
+  border-radius: 40px;
+}
+
+#user-info {
+  border-color: rgb(8, 116, 135);
+  
+}
+
+#computer-info {
+  border-color: rgb(190, 32, 32);
+  
+}
+
+.play-info {
+  text-align: center;
+  line-height: 30px;
+  border: solid 3px;
+  height: 180px;
+  border-radius: 20px;
+}
+
+@media (max-width: 625px) {
+
+  #btnbar {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 680px) {
+  .player-container {
+    margin: 10px;
+  }
+
+  .player-info {
+    justify-content: center; 
+  }
 }

@@ -60,9 +60,9 @@
 
     restart_btn.addEventListener('click', () => {
 
-      after_match.style.visibility = 'visible';
-      continue_btn.style.visibility = 'visible';
-      restart_btn.style.visibility = 'visible';
+      after_match.style.visibility = 'hidden';
+      continue_btn.style.visibility = 'hidden';
+      restart_btn.style.visibility = 'hidden';
 
       btns.forEach((btns) => {
         btns.disabled = false;
